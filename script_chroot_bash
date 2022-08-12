@@ -1,0 +1,24 @@
+#!/bin/bash
+
+mkdir chroot_bash
+mkdir chroot_bash/bin
+mkdir chroot_bash/lib
+mkdir chroot_bash/lib64
+cp -v /bin/bash chroot_bash/bin
+cp -v /bin/ls chroot_bash/bin
+cp -v /bin/cp chroot_bash/bin
+cp -v /bin/cat chroot_bash/bin
+cp -v /bin/touch chroot_bash/bin
+cp -v /lib/x86_64-linux-gnu/libtinfo.so.6 chroot_bash/lib
+cp -v /lib/x86_64-linux-gnu/libdl.so.2 chroot_bash/lib
+cp -v /lib/x86_64-linux-gnu/libc.so.6 chroot_bash/lib
+cp -v /lib64/ld-linux-x86-64.so.2 chroot_bash/lib64
+cp -v /lib/x86_64-linux-gnu/libselinux.so.1 chroot_bash/lib
+cp -v /lib/x86_64-linux-gnu/libacl.so.1 chroot_bash/lib
+cp -v /lib/x86_64-linux-gnu/libattr.so.1 chroot_bash/lib
+cp -v /lib/x86_64-linux-gnu/libc.so.6 chroot_bash/lib
+cp -v /lib/x86_64-linux-gnu/libpcre2-8.so.0 chroot_bash/lib
+cp -v /lib/x86_64-linux-gnu/libdl.so.2 chroot_bash/lib
+cp -v /lib64/ld-linux-x86-64.so.2 chroot_bash/lib64
+cp -v /lib/x86_64-linux-gnu/libpthread.so.0 chroot_bash/lib
+
